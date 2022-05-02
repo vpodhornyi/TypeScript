@@ -1,0 +1,7 @@
+npm install -g typescript (first install nodejs)
+
+tsc index.ts - compiling ts to js
+
+tsconfig.json  - config for compiling ts to js, create it in root. For compiling print tsc command in root directory
+
+
