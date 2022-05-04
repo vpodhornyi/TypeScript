@@ -1,7 +1,7 @@
 class Message {
     messageText: string;
 
-    constructor(text) {
+    constructor(text: string) {
         this.messageText = text;
     }
 

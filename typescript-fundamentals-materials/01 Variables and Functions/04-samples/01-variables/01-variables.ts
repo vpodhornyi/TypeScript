@@ -7,3 +7,4 @@ let message2: string = "Hello!";
 // Тоже что и let но созданное значение нельзя изменить.
 const message3: string = "Hello!";
 //message3 = "world"; //[ts] Cannot assign to 'message3' because it is a constant or a read-only property
+

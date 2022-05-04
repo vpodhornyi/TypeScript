@@ -1,7 +1,44 @@
 npm install -g typescript (first install nodejs)
 
-tsc index.ts - compiling ts to js
+tsc index.ts --- compiling ts to js
 
 tsconfig.json  - config for compiling ts to js, create it in root. For compiling print tsc command in root directory
 
 
+---------- Types variables ------------ 
+
+    Number:
+        let a1_decimal: number = 10;
+        let a2_hex: number = 0x000a;
+        let a3_binary: number = 0b1010;
+        let a4_octal: number = 0o12;
+    
+    String:
+        let name: string = "Viktor";
+
+    Array:
+        let arr1: string[] = ["one", "two", "three"]; -------- array only with string
+        let arr2: number[] = [1, 2, 3]; ---------------------- array only with nubers
+        let arr3: Array<string> = ["one", "two", "three"]; --- array only with string & use generic
+        let arr3: Array<Array<numbre>> = [[1,2,3], [4,5,6]] -- array only with string & use generic
+        
+        Tuple: 
+            let arr1: [string, number] = ["one", 1] - array with fixed params, length = 2, first = string, second - number
+
+    Enum:
+        enum Color {Red, Green, Blue}; -- Red = 0, Green = 1, Blue = 2 (by default enum starts from 0)
+        let c1: Color = Color.Red; ------ c1 = 0
+
+        enum Status {Success = 10, Error = 20, Warning = 30};
+        let s1 = Status.Success; --- s1 = 10
+
+    Any:
+        let v: any = "Heloo";
+        v = false;
+        v = 100;
+
+---------- Type assertions ----------
+ 
+        let someData: any = "Hello world";
+        let strLength1: number = (<string>someData).length;
+        let strLength2: number = (someData as string).length; 
